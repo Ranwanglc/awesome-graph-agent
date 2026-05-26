@@ -64,9 +64,59 @@ A curated collection of papers, projects, and resources on **Graph × Agent/LLM*
 
 ## Statistics
 
-- **Total Papers:** 20
-- **Conference:** ICML 2026
-- **Main Topics:** Agent × Graph (10), RAG × Graph (4), LLM Reliability × Graph (3), LLM Fundamentals × Graph (3)
+- **Total Papers:** 42
+- **Conferences:** ICML 2026, AAAI 2025/2026, ACL 2025, NeurIPS 2024, WWW 2026
+- **Main Topics:** Agent × Graph (15), RAG × Graph (9), LLM Reasoning × Graph (6), LLM Fundamentals × Graph (4), LLM Reliability × Graph (3), Multi-Agent × Graph (5)
+
+
+---
+
+## Graph + Agent Planning & Orchestration (Additional CCF-A)
+
+| # | Paper | Venue | Year | Keywords |
+|---|-------|-------|------|----------|
+| 21 | **AgentGraph: Trace-to-Graph Platform for Interactive Analysis and Robustness Testing in Agentic AI Systems** | AAAI 2026 | 2026 | Agent, Graph, Planning |
+| 22 | **BayesAgent: Bayesian Agentic Reasoning Under Uncertainty via Verbalized Probabilistic Graphical Modeling** | AAAI 2026 | 2026 | Agent, Graph, Planning |
+| 23 | **S-DAG: A Subject-Based Directed Acyclic Graph for Multi-Agent Heterogeneous Reasoning** | AAAI 2026 | 2026 | Agent, Graph, Planning |
+| 24 | **VerilogCoder: Autonomous Verilog Coding Agents with Graph-based Planning and AST-based Waveform Tracing Tool** | AAAI 2025 | 2025 | Agent, Graph, Planning |
+| 25 | **Can Graph Learning Improve Planning in LLM-based Agents?** | NeurIPS 2024 | 2024 | Agent, Graph, Planning |
+
+## Graph + Multi-Agent Systems (Additional CCF-A)
+
+| # | Paper | Venue | Year | Keywords |
+|---|-------|-------|------|----------|
+| 26 | **Assemble Your Crew: Automatic Multi-agent Communication Topology Design via Autoregressive Graph Generation** | AAAI 2026 | 2026 | Multi-Agent, Graph |
+| 27 | **GRDC: A Unified Graph-Driven Framework for Role Discovery and Communication in Multi-Agent Reinforcement Learning** | AAAI 2026 | 2026 | Multi-Agent, Graph |
+| 28 | **Schema-Guided Scene-Graph Reasoning Based on Multi-Agent Large Language Model System** | AAAI 2026 | 2026 | Multi-Agent, Graph |
+| 29 | **Graph Agent Network: Empowering Nodes with Inference Capabilities for Adversarial Resilience** | AAAI 2025 | 2025 | Multi-Agent, Graph |
+| 30 | **GraphCogent: Mitigating LLMs Working Memory Constraints via Multi-Agent Collaboration in Complex Graph Understanding** | WWW 2026 | 2026 | Multi-Agent, Graph |
+
+## Graph + RAG (Additional CCF-A)
+
+| # | Paper | Venue | Year | Keywords |
+|---|-------|-------|------|----------|
+| 31 | **GraphRAG-Induced Dual Knowledge Structure Graphs for Personalized Learning Path Recommendation** | AAAI 2026 | 2026 | RAG, Knowledge Graph |
+| 32 | **Relink: Constructing Query-Driven Evidence Graph On-the-Fly for GraphRAG** | AAAI 2026 | 2026 | RAG, Knowledge Graph |
+| 33 | **Knowledge Graph Retrieval-Augmented Generation for LLM-based Recommendation** | ACL 2025 | 2025 | RAG, Knowledge Graph |
+| 34 | **HyKGE: A Hypothesis Knowledge Graph Enhanced RAG Framework for Accurate and Reliable Medical LLMs Responses** | ACL 2025 | 2025 | RAG, Knowledge Graph |
+| 35 | **DRAG: Distilling RAG for SLMs from LLMs to Transfer Knowledge and Mitigate Hallucination via Evidence and Graph-based Distillation** | ACL 2025 | 2025 | RAG, Knowledge Graph |
+
+## Graph + LLM Reasoning (New Category)
+
+| # | Paper | Venue | Year | Keywords |
+|---|-------|-------|------|----------|
+| 36 | **Walk Wisely on Graph: Knowledge Graph Reasoning with Dual Agents via Efficient Guidance-Exploration** | AAAI 2025 | 2025 | Reasoning, KG, LLM |
+| 37 | **Debate over Mixed-knowledge: A Robust Multi-Agent Reasoning Framework for Incomplete Knowledge Graph Question Answering** | AAAI 2026 | 2026 | Reasoning, KG, LLM |
+| 38 | **Graph Counselor: Adaptive Graph Exploration via Multi-Agent Synergy to Enhance LLM Reasoning** | ACL 2025 | 2025 | Reasoning, KG, LLM |
+| 39 | **ReKG-MCTS: Reinforcing LLM Reasoning on Knowledge Graphs via Training-Free Monte Carlo Tree Search** | ACL 2025 | 2025 | Reasoning, KG, LLM |
+| 40 | **Reasoning with Graphs: Structuring Implicit Knowledge to Enhance LLMs Reasoning** | ACL 2025 | 2025 | Reasoning, KG, LLM |
+| 41 | **GLTW: Joint Improved Graph Transformer and LLM via Three-Word Language for Knowledge Graph Completion** | ACL 2025 | 2025 | Reasoning, KG, LLM |
+
+## Graph + LLM Fundamentals (Additional CCF-A)
+
+| # | Paper | Venue | Year | Keywords |
+|---|-------|-------|------|----------|
+| 42 | **LLMs as Zero-shot Graph Learners: Alignment of GNN Representations with LLM Token Embeddings** | NeurIPS 2024 | 2024 | Graph Learning, LLM |
 
 ## Contributing
 
