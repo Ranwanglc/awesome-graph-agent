@@ -4,6 +4,9 @@
 > Searches DBLP for CCF-A papers matching the repository's research focus,
 > deduplicates against existing entries, downloads PDFs from arXiv,
 > and commits updates to the repository.
+>
+> **Note:** PDFs are stored in a separate private repository
+> (`Ranwanglc/awesome-graph-agent-pdfs`) to keep the main repo lightweight.
 
 ## Trigger
 
@@ -84,12 +87,22 @@ re.findall(r'arXiv:(\d{4}\.\d{4,5})', html)
 - If full title search fails, try the acronym (e.g., "BayesAgent", "GraphCogent")
 - Wait 2-3 seconds between arXiv searches
 
-### Step 6: Download PDFs
+### Step 6: Download PDFs (to private repo)
 
-For each paper with an arXiv ID:
+PDFs are stored in a **separate private repository**: `Ranwanglc/awesome-graph-agent-pdfs`
 
 ```bash
-curl -sL "https://arxiv.org/pdf/<arxiv_id>" -o "papers/pdfs/<VENUE>_<YEAR>_<CATEGORY>_<SHORT_NAME>.pdf"
+# Clone or pull the private PDF repo
+git clone https://github.com/Ranwanglc/awesome-graph-agent-pdfs.git /tmp/pdfs-repo
+
+# Download each paper
+curl -sL "https://arxiv.org/pdf/<arxiv_id>" -o "/tmp/pdfs-repo/<VENUE>_<YEAR>_<CATEGORY>_<SHORT_NAME>.pdf"
+
+# After all downloads, commit and push to private repo
+cd /tmp/pdfs-repo
+git add -A
+git commit -m "feat: add N new PDFs"
+git push origin main
 ```
 
 **Naming convention:** `<VENUE>_<YEAR>_<CATEGORY>_<SHORT_NAME>.pdf`
@@ -97,6 +110,9 @@ curl -sL "https://arxiv.org/pdf/<arxiv_id>" -o "papers/pdfs/<VENUE>_<YEAR>_<CATE
 - Example: `ACL_2025_reasoning_Graph_Counselor.pdf`
 
 **Validation:** File must be > 50KB to be considered valid.
+
+**Why separate?** PDFs are large binary files that bloat git history.
+Keeping them in a private repo also protects copyright-sensitive content.
 
 ### Step 7: Update README.md
 
@@ -128,13 +144,23 @@ Total: N papers
 
 ### Step 9: Commit and Push
 
+**Main repo (public):** metadata, README, venue files only (no PDFs)
 ```bash
+cd <main-repo-dir>
 git add -A
-git commit -m "feat: add N papers from <venues> (<years>) with M PDFs"
+git commit -m "feat: add N papers from <venues> (<years>)"
 git push origin feat/add-papers-<date>
 ```
 
-Then request merge to main (via collaborator or PR).
+**PDF repo (private):** push downloaded PDFs separately
+```bash
+cd /tmp/pdfs-repo
+git add -A
+git commit -m "feat: add M PDFs from <venues> (<years>)"
+git push origin main
+```
+
+Then request merge of the main repo branch to main (via collaborator or PR).
 
 ## Error Handling
 

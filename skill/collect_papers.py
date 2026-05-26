@@ -67,7 +67,8 @@ def get_existing_titles(readme_path):
 
 def main():
     parser = argparse.ArgumentParser(description='Paper Collector for awesome-graph-agent')
-    parser.add_argument('--repo-dir', required=True, help='Path to the repo')
+    parser.add_argument('--repo-dir', required=True, help='Path to the main repo')
+    parser.add_argument('--pdfs-repo', default='', help='Path to the private PDF repo (if empty, PDFs saved to <repo-dir>/papers/pdfs/)')
     parser.add_argument('--keywords', nargs='+', default=['graph agent LLM', 'GraphRAG', 'graph multi-agent', 'knowledge graph LLM reasoning'])
     parser.add_argument('--venues', default='AAAI,ACL,NeurIPS,ICML,IJCAI,KDD,WWW')
     parser.add_argument('--min-year', type=int, default=2024)
@@ -76,7 +77,12 @@ def main():
 
     repo_dir = args.repo_dir
     readme_path = os.path.join(repo_dir, 'README.md')
-    pdfs_dir = os.path.join(repo_dir, 'papers', 'pdfs')
+    
+    # PDF storage: use separate repo if specified, otherwise local
+    if args.pdfs_repo:
+        pdfs_dir = args.pdfs_repo
+    else:
+        pdfs_dir = os.path.join(repo_dir, 'papers', 'pdfs')
     os.makedirs(pdfs_dir, exist_ok=True)
 
     ccf_a_venues = set(v.strip().upper() for v in args.venues.split(','))
