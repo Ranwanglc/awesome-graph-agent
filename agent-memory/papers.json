@@ -1,0 +1,211 @@
+[
+  {
+    "title": "PromptX: A Cognitive Agent Platform with Long-term Memory",
+    "year": "2026",
+    "venue": "WWW",
+    "doi": "10.1145/3774905.3793108",
+    "url": "https://doi.org/10.1145/3774905.3793108",
+    "dblp_key": "conf/www/WangHHJWYJYCZZL26",
+    "pdf": null,
+    "abstract": "While large language models (LLMs) demonstrate impressive contextual understanding, their limitations in long-term memory and personalized reasoning constrain their practical impact in industrial settings. To address these gaps, we introduce PromptX, a cognitive platform that enables AI agents to construct structured memory and develop their reasoning over time. PromptX integrates three core technologies: (1) A new prompt markup language to define agent personas and memory organization; (2) Engram-based activation-diffusion memory networks that unify raw experiences with conceptual sequences, enabling associative retrieval through graph network propagation; (3) a protocol-driven orchestration layer enabling dynamic tool discovery and coordination, inspired by HATEOAS principles from web-engineering. During five months of real-world deployment across a range of 15+ enterprises in 6 industries, PromptX has been validated in multiple industry domains (e.g., software engineering, education, healthcare), accumulating 50K+ downloads and 3K+ GitHub stars and evidencing practical feasibility and commercial value in production workflows. Our demo and initial product are available at https://promptx.deepractice.ai/. The source code and documentation are available online at https://github.com/Deepractice/PromptX. The supplementary materials are also available online . https://drive.google.com/drive/folders/1wPhEQCKeaZIsQAcFnC7XKmXTtwY1gJL1?usp=sharing.",
+    "abstract_src": "openalex-doi"
+  },
+  {
+    "title": "GraphCogent: Mitigating LLMs' Working Memory Constraints via Multi-Agent Collaboration in Complex Graph Understanding",
+    "year": "2026",
+    "venue": "WWW",
+    "doi": "10.1145/3774904.3792314",
+    "url": "https://doi.org/10.1145/3774904.3792314",
+    "dblp_key": "conf/www/WangLCHLMZQL26",
+    "pdf": "GraphCogent_Mitigating_LLMs_Working_Memory_Constraints_via_M.pdf",
+    "abstract": "Large language models (LLMs) show promising performance on small-scale graph reasoning tasks but fail when handling real-world graphs with complex queries. This phenomenon arises from LLMs' working memory constraints, which result in their inability to retain long-range graph topology over extended contexts while sustaining coherent multi-step reasoning. However, real-world graphs are often structurally complex, such as Web, Transportation, Social, and Citation networks. To address these limitations, we propose GraphCogent, a collaborative agent framework inspired by human Working Memory Model that decomposes graph reasoning into specialized cognitive processes: sense, buffer, and execute. The framework consists of three modules: Sensory Module standardizes diverse graph text representations via subgraph sampling, Buffer Module integrates and indexes graph data across multiple formats, and Execution Module combines tool calling and tool creation for efficient reasoning. We also introduce Graph4real, a comprehensive benchmark that contains four domains of real-world graphs (Web, Transportation, Social, and Citation) to evaluate LLMs' graph reasoning capabilities. Our Graph4real covers 21 different graph reasoning tasks, categorized into three types (Structural Querying, Algorithmic Reasoning, and Predictive Modeling tasks), with graph scales up to 10 times larger than existing benchmarks. Experiments show that Llama3.1-8B based GraphCogent achieves a 50% improvement over massive-scale LLMs like DeepSeek-R1 (671B). Compared to state-of-the-art agent-based baseline, our framework outperforms by 20% in accuracy while reducing token usage by 80% for in-toolset tasks and 30% for out-toolset tasks. Code will be available after review.",
+    "abstract_src": "arxiv"
+  },
+  {
+    "title": "DrunkAgent: Stealthy Memory Corruption in LLM-Powered Recommender Agents",
+    "year": "2026",
+    "venue": "WWW",
+    "doi": "10.1145/3774904.3792688",
+    "url": "https://doi.org/10.1145/3774904.3792688",
+    "dblp_key": "conf/www/YangHLWYXZY26",
+    "pdf": "DrunkAgent_Stealthy_Memory_Corruption_in_LLM_Powered_Recomme.pdf",
+    "abstract": "Large language model (LLM)-powered agents are increasingly used in recommender systems (RSs) to achieve personalized behavior modeling, where the memory mechanism plays a pivotal role in enabling the agents to autonomously explore, learn and self-evolve from real-world interactions. However, this very mechanism, serving as a contextual repository, inherently exposes an attack surface for potential adversarial manipulations. Despite its central role, the robustness of agentic RSs in the face of such threats remains largely underexplored. Previous works suffer from semantic mismatches or rely on static embeddings or pre-defined prompts, all of which are not designed for dynamic systems, especially for dynamic memory states of LLM agents. This challenge is exacerbated by the black-box nature of commercial recommenders. To tackle the above problems, in this paper, we present the first systematic investigation of memory-based vulnerabilities in LLM-powered recommender agents, revealing their security limitations and guiding efforts to strengthen system resilience and trustworthiness. Specifically, we propose a novel black-box attack framework named DrunkAgent. DrunkAgent crafts semantically meaningful adversarial textual triggers for target item promotions and introduces a series of strategies to maximize the trigger effect by corrupting the memory updates during the interactions. The triggers and strategies are optimized on a surrogate model, enabling DrunkAgent transferable and stealthy. Extensive experiments on real-world datasets across diverse agentic RSs, including collaborative filtering, retrieval augmentation and sequential recommendations, demonstrate the generalizability, transferability and stealthiness of DrunkAgent.",
+    "abstract_src": "arxiv"
+  },
+  {
+    "title": "Memory in LLM-Based Multi-agent Systems: Mechanisms, Challenges, and Collective Intelligence",
+    "year": "2026",
+    "venue": "PAKDD",
+    "doi": "10.1007/978-981-92-1468-6_10",
+    "url": "https://doi.org/10.1007/978-981-92-1468-6_10",
+    "dblp_key": "conf/pakdd/WuS26",
+    "pdf": null,
+    "abstract": "Memory plays a central role in transforming Large Language Model (LLM)-based agents from reactive predictors into consistent, context-aware collaborators. While LLM-based single-agent memory has been extensively studied, memory in LLM-based Multi-Agent Systems (LLM-MAS) lacks a systematic taxonomy and review. In multi-agent contexts, memory becomes a shared cognitive infrastructure enabling collective intelligence, long-term coordination, and team evolvement. This survey provides the first comprehensive review of memory in LLM-MAS, synthesizing research across memory architectures, management and operations, evaluation, and application, while formalizing key definitions and introducing the design space. Our survey reveals that memory in LLM-MAS is not a trivial extension of single-agent memory but a distinct research frontier-with new challenges in synchronization, access control, scalability, alignment, and safety. By consolidating diverse literature, we aim to provide a foundation for future research in building intelligent, memory-augmented multi-agent systems. In order to follow the latest works in this field, we create and maintain a repository at https://github.com/ShanglinWu/LLM-MAS_Memory_Survey.git.",
+    "abstract_src": "openalex-doi"
+  },
+  {
+    "title": "MemTool: Optimizing Short-Term Memory Management for Dynamic Tool Retrieval and Invocation in LLM Agent Multi-turn Conversations",
+    "year": "2026",
+    "venue": "ECIR",
+    "doi": "10.1007/978-3-032-21300-6_15",
+    "url": "https://doi.org/10.1007/978-3-032-21300-6_15",
+    "dblp_key": "conf/ecir/LumerGSBB26",
+    "pdf": null,
+    "abstract": "Large Language Model (LLM) agents have shown significant autonomous capabilities in dynamically searching and incorporating relevant tools or Model Context Protocol (MCP) servers for individual queries. However, fixed context windows limit effectiveness in multi-turn interactions requiring repeated, independent tool usage. We introduce MemTool, a short-term memory framework enabling LLM agents to dynamically manage tools or MCP server contexts across multi-turn conversations. MemTool offers three agentic architectures: 1) Autonomous Agent Mode, granting full tool management autonomy, 2) Workflow Mode, providing deterministic control without autonomy, and 3) Hybrid Mode, combining autonomous and deterministic control. Evaluating each MemTool mode across 13+ LLMs on the ScaleMCP benchmark, we conducted experiments over 100 consecutive user interactions, measuring tool removal ratios (short-term memory efficiency) and task completion accuracy. In Autonomous Agent Mode, reasoning LLMs achieve high tool-removal efficiency (90-94% over a 3-window average), while medium-sized models exhibit significantly lower efficiency (0-60%). Workflow and Hybrid modes consistently manage tool removal effectively, whereas Autonomous and Hybrid modes excel at task completion. We present trade-offs and recommendations for each MemTool mode based on task accuracy, agency, and model capabilities.",
+    "abstract_src": "arxiv"
+  },
+  {
+    "title": "H-MEM: Hierarchical Memory for High-Efficiency Long-Term Reasoning in LLM Agents",
+    "year": "2026",
+    "venue": "EACL",
+    "doi": "10.18653/V1/2026.EACL-LONG.15",
+    "url": "https://doi.org/10.18653/v1/2026.eacl-long.15",
+    "dblp_key": "conf/eacl/SunZZ26",
+    "pdf": "H_MEM_Hierarchical_Memory_for_High_Efficiency_Long_Term_Reas.pdf",
+    "abstract": "Long-term memory is one of the key factors influencing the reasoning capabilities of Large Language Model Agents (LLM Agents).Incorporating a memory mechanism that effectively integrates past interactions can significantly enhance decision-making and contextual coherence of LLM Agents.While recent works have made progress in memory storage and retrieval, such as encoding memory into dense vectors for similarity-based search or organizing knowledge in the form of graph, these approaches often fall short in structured memory organization and efficient retrieval.To address these limitations, we propose a Hierarchical Memory (H-MEM) architecture for LLM Agents that organizes and updates memory in a multi-level fashion based on the degree of semantic abstraction.Each memory vector is embedded with a positional index encoding pointing to its semantically related submemories in the next layer.During the reasoning phase, an index-based routing mechanism enables efficient, layer-by-layer retrieval without performing exhaustive similarity computations.We evaluate our method on five task settings from the LoCoMo dataset.Experimental results show that our approach consistently outperforms five baseline methods, demonstrating its effectiveness in long-term dialogue scenarios.",
+    "abstract_src": "openalex-doi"
+  },
+  {
+    "title": "Towards Usable, Privacy Respecting Long-Term Memory for LLM-based Conversational Agents",
+    "year": "2026",
+    "venue": "CHI Extended Abstracts",
+    "doi": "10.1145/3772363.3799198",
+    "url": "https://doi.org/10.1145/3772363.3799198",
+    "dblp_key": "conf/chi/Malki26",
+    "pdf": null,
+    "abstract": "In recent years, Large Language Models (LLMs) have evolved from stateless text generators into conversational agents (CAs) that use long-term memory to facilitate personalised and compelling interactions. While these emerging capabilities improve user experience, they also introduce ethical and privacy concerns. Although prior work has examined LLM privacy from a technical perspective, few studies have designed features or interaction techniques for supporting users with privacy management. The aim of my thesis is to address this gap by co-designing usable, privacy-respecting memory mechanisms for LLM-based CAs. I present a mixed-methods survey of LLM-based CA users’ privacy attitudes and strategies, and an ongoing design taxonomy of conversational privacy controls. I then present a plan for two further studies focused on co-designing and prototyping interface controls with users. I aim for my thesis to contribute tangible mechanisms for enhancing human autonomy in memory-enabled AI interactions.",
+    "abstract_src": "s2"
+  },
+  {
+    "title": "Mem-PAL: Towards Memory-based Personalized Dialogue Assistants for Long-term User-Agent Interaction",
+    "year": "2026",
+    "venue": "AAAI",
+    "doi": "10.1609/AAAI.V40I37.40385",
+    "url": "https://doi.org/10.1609/aaai.v40i37.40385",
+    "dblp_key": "conf/aaai/HuangDWWLGWJ26",
+    "pdf": "Mem_PAL_Towards_Memory_based_Personalized_Dialogue_Assistant.pdf",
+    "abstract": "With the rise of smart personal devices, service-oriented human-agent interactions have become increasingly prevalent. This trend highlights the need for personalized dialogue assistants that can understand user-specific traits to accurately interpret requirements and tailor responses to individual preferences. However, existing approaches often overlook the complexities of long-term interactions and fail to capture users' subjective characteristics. To address these gaps, we present PAL-Bench, a new benchmark designed to evaluate the personalization capabilities of service-oriented assistants in long-term user-agent interactions. In the absence of available real-world data, we develop a multi-step LLM-based synthesis pipeline, which is further verified and refined by human annotators. This process yields PAL-Set, the first Chinese dataset comprising multi-session user logs and dialogue histories, which serves as the foundation for PAL-Bench. Furthermore, to improve personalized service-oriented interactions, we propose H$^2$Memory, a hierarchical and heterogeneous memory framework that incorporates retrieval-augmented generation to improve personalized response generation. Comprehensive experiments on both our PAL-Bench and an external dataset demonstrate the effectiveness of the proposed memory framework.",
+    "abstract_src": "arxiv"
+  },
+  {
+    "title": "MemoryART: Enhancing LLMs via Multi-Memory Models with Adaptive Resonance Theory for Healthcare Agents",
+    "year": "2026",
+    "venue": "AAAI",
+    "doi": "10.1609/AAAI.V40I25.39205",
+    "url": "https://doi.org/10.1609/aaai.v40i25.39205",
+    "dblp_key": "conf/aaai/DaiHZKT26",
+    "pdf": null,
+    "abstract": "Though promising in healthcare consultation applications, large language models (LLMs) face critical limitations in retaining and utilizing long-term memory across multi-turn interactions. In particular, existing memory enhancing paradigms are constrained by limited context windows and embedding-based retrieval, often failing to maintain task relevance and still suffering from memory prototype collapse in multi-turn healthcare consultation. To address these challenges, we propose a cognitively-inspired memory framework named MemoryART, which is grounded in Adaptive Resonance Theory (ART)—a cognitive and learning theory of how humans and animals adapt to dynamic environments. MemoryART employs three memory modules—working memory, episodic memory, and semantic memory to support task-aware memory organization and dynamic retrieval. Specifically, episodic memory provides the storage of specific experiences along with contextual clues, which is crucial for managing patient-specific information and perfect for multi-turn healthcare consultation interactions. Building upon this concept, MemoryART leverages multi-channel competitive learning and resonance matching to enable efficient and interpretable episodic memory encoding, alleviating issues of prototype collapse and noisy memory associations. For evaluation, we construct a long-term medical dialogue benchmark called MediLongChat using a LLM-based generation pipeline. The resulting dataset features realistic, multi-disease chat histories, each exceeding 100K tokens across 20–30 dialogues, simulating real-world healthcare interaction patterns. Our experimental results show that MemoryART outperforms mainstream approaches in memory-intensive tasks, achieving SOTA results and significantly reducing token consumption across five popular LLMs, confirming its effectiveness and efficiency in providing scalable, reliable memory for LLMs in healthcare.",
+    "abstract_src": "openalex-doi"
+  },
+  {
+    "title": "MemGuide: Intent-Driven Memory Selection for Goal-Oriented Multi-Session LLM Agents",
+    "year": "2026",
+    "venue": "AAAI",
+    "doi": "10.1609/AAAI.V40I36.40313",
+    "url": "https://doi.org/10.1609/aaai.v40i36.40313",
+    "dblp_key": "conf/aaai/DuWHLWLGPXW26",
+    "pdf": null,
+    "abstract": "Modern task-oriented dialogue (TOD) systems increasingly rely on large language model (LLM) agents, leveraging Retrieval-Augmented Generation (RAG) and long-context capabilities for long-term memory utilization. However, these methods prioritise semantic similarity over task intent, degrading multi-session coherence. We propose MemGuide, a two-stage intent-driven memory selection framework: (1) Intent‑Aligned Retrieval retrieves goal-consistent QA‑formatted memory units; (2) Missing‑Slot Guided Filtering reranks units by slot-completion gain via a chain‑of‑thought reasoner and fine‑tuned LLaMA‑8B filter. We also introduce the MS-TOD, the first multi-session TOD benchmark with 132 diverse personas, 956 task goals, and annotated intent-aligned memory targets. Evaluations on MS-TOD show that MemGuide boosts task success rate by 11% (88%→99%) and reduces dialogue length by 2.84 turns, and matches single‑session performance.",
+    "abstract_src": "crossref"
+  },
+  {
+    "title": "Value-Driven Memory-Augmented Generation for Agentic LLMs: Towards Structured and Adaptive Knowledge Utilization",
+    "year": "2026",
+    "venue": "AAAI",
+    "doi": "10.1609/AAAI.V40I48.42170",
+    "url": "https://doi.org/10.1609/aaai.v40i48.42170",
+    "dblp_key": "conf/aaai/Tan26",
+    "pdf": null,
+    "abstract": "Large Language Models (LLMs) have demonstrated remarkable capabilities in reasoning, yet their efficacy is constrained by a fundamental memory limitation: a static context window that resets with each interaction. This prevents them from accumulating experience and adapting to dynamic, long-term tasks. To address the limitations of long-term memory in agentic LLMs, this work introduces a neuro-inspired framework with two key contributions. First, we propose \\textbf{ARTEM} (Agentic Retrieval with Temporal-Episodic Memory), a system that organizes experiences into structured events and manages utility-based memory consolidation. Second, we extend this framework with a distinct governance component, \\textbf{Value-driven ARTEM}, that validates candidate outputs against core principles before finalization. Together, these components equip LLM agents with continual learning, adaptive reasoning, and robust value-aligned decision-making. Looking forward, we outline future directions including dynamic memory adaptation, memory decay mechanisms, and applications in interactive multi-agent environments.",
+    "abstract_src": "openalex-doi"
+  },
+  {
+    "title": "ARTEM: Enhancing Large Language Model Agents with Spatial-Temporal Episodic Memory",
+    "year": "2026",
+    "venue": "AAAI",
+    "doi": "10.1609/AAAI.V40I30.39773",
+    "url": "https://doi.org/10.1609/aaai.v40i30.39773",
+    "dblp_key": "conf/aaai/TanST26",
+    "pdf": null,
+    "abstract": "Current large language models (LLMs) exhibit significant deficiencies in episodic memory tasks including encoding, storing, and retrieving specific information from temporally dependent events over a long period of time. Recent approaches to handle memory tasks in LLMs, such as in-context learning, retrieval-augmented generation (RAG), and fine-tuning, may resolve the long-term retention issues, but are still inadequate to handle tasks requiring chronological awareness of the stored information. We introduce Agentic Retrieval with Temporal-Episodic Memory (ARTEM), a hybrid LLM-based agent architecture integrating LLMs with a self-organizing neural network named Spatial-Temporal Episodic Memory (STEM), designed to handle episodic memory tasks. Our approach employs LLMs for event extraction from the inputs to represent temporal, spatial, entitative, and semantic information that may facilitate future retrieval, aside from generating outputs or direct responses. The extracted events can then be encoded vectorially and stored in a fast and stable manner in the episodic memory through an instance-based incremental learning in STEM. STEM supports precise episodes retrieval and helps reduce computational overhead in generating the appropriate responses by LLMs. Evaluation on standardized episodic memory benchmarks across four tasks—partial cue retrieval, epistemic uncertainty detection, recent event identification, and chronological recall—demonstrates superior performance of ARTEM compared to in-context learning, RAG, and fine-tuning in various popular LLMs.",
+    "abstract_src": "openalex-doi"
+  },
+  {
+    "title": "AgentCF++: Memory-enhanced LLM-based Agents for Popularity-aware Cross-domain Recommendations",
+    "year": "2025",
+    "venue": "SIGIR",
+    "doi": "10.1145/3726302.3730161",
+    "url": "https://doi.org/10.1145/3726302.3730161",
+    "dblp_key": "conf/sigir/LiuG0ZHGZLSG25",
+    "pdf": null,
+    "abstract": "LLM-based user agents, which simulate user interaction behavior, are emerging as a promising approach to enhancing recommender systems. In real-world scenarios, users' interactions often exhibit cross-domain characteristics and are influenced by others. However, the memory design in current methods causes user agents to introduce significant irrelevant information during decision-making in cross-domain scenarios and makes them unable to recognize the influence of other users' interactions, such as popularity factors. To tackle this issue, we propose a dual-layer memory architecture combined with a two-step fusion mechanism. This design avoids irrelevant information during decision-making while ensuring effective integration of cross-domain preferences. We also introduce the concepts of interest groups and group-shared memory to better capture the influence of popularity factors on users with similar interests. Comprehensive experiments validate the effectiveness of AgentCF++. Our code is available at https://github.com/jhliu0807/AgentCF-plus.",
+    "abstract_src": "openalex-doi"
+  },
+  {
+    "title": "JARVIS-1: Open-World Multi-Task Agents With Memory-Augmented Multimodal Language Models",
+    "year": "2025",
+    "venue": "IEEE Trans. Pattern Anal. Mach. Intell.",
+    "doi": "10.1109/TPAMI.2024.3511593",
+    "url": "https://doi.org/10.1109/TPAMI.2024.3511593",
+    "dblp_key": "journals/pami/WangCLJHZLHZYML25",
+    "pdf": null,
+    "abstract": "Achieving human-like planning and control with multimodal observations in an open world is a key milestone for more functional generalist agents. Existing approaches can handle certain long-horizon tasks in an open world. However, they still struggle when the number of open-world tasks could potentially be infinite and lack the capability to progressively enhance task completion as game time progresses. We introduce JARVIS-1, an open-world agent that can perceive multimodal input (visual observations and human instructions), generate sophisticated plans, and perform embodied control, all within the popular yet challenging open-world Minecraft universe. Specifically, we develop JARVIS-1 on top of pre-trained multimodal language models, which map visual observations and textual instructions to plans. The plans will be ultimately dispatched to the goal-conditioned controllers. We outfit JARVIS-1 with a multimodal memory, which facilitates planning using both pre-trained knowledge and its actual game survival experiences. JARVIS-1 is the existing most general agent in Minecraft, capable of completing over 200 different tasks using control and observation space similar to humans. These tasks range from short-horizon tasks, e.g., \"chopping trees\" to long-horizon tasks, e.g., \"obtaining a diamond pickaxe\". JARVIS-1 performs exceptionally well in short-horizon tasks, achieving nearly perfect performance. In the classic long-term task of $\\texttt{ObtainDiamondPickaxe}$, JARVIS-1 surpasses the reliability of current state-of-the-art agents by 5 times and can successfully complete longer-horizon and more challenging tasks. The project page is available at https://craftjarvis.org/JARVIS-1",
+    "abstract_src": "arxiv"
+  },
+  {
+    "title": "In Prospect and Retrospect: Reflective Memory Management for Long-term Personalized Dialogue Agents",
+    "year": "2025",
+    "venue": "ACL",
+    "doi": "10.18653/V1/2025.ACL-LONG.413",
+    "url": "https://doi.org/10.18653/v1/2025.acl-long.413",
+    "dblp_key": "conf/acl/0001YHH0LSCPLI025",
+    "pdf": "In_Prospect_and_Retrospect_Reflective_Memory_Management_for.pdf",
+    "abstract": "Large Language Models (LLMs) have made significant progress in open-ended dialogue, yet their inability to retain and retrieve relevant information from long-term interactions limits their effectiveness in applications requiring sustained personalization. External memory mechanisms have been proposed to address this limitation, enabling LLMs to maintain conversational continuity. However, existing approaches struggle with two key challenges. First, rigid memory granularity fails to capture the natural semantic structure of conversations, leading to fragmented and incomplete representations. Second, fixed retrieval mechanisms cannot adapt to diverse dialogue contexts and user interaction patterns. In this work, we propose Reflective Memory Management (RMM), a novel mechanism for long-term dialogue agents, integrating forward- and backward-looking reflections: (1) Prospective Reflection, which dynamically summarizes interactions across granularities-utterances, turns, and sessions-into a personalized memory bank for effective future retrieval, and (2) Retrospective Reflection, which iteratively refines the retrieval in an online reinforcement learning (RL) manner based on LLMs' cited evidence. Experiments show that RMM demonstrates consistent improvement across various metrics and benchmarks. For example, RMM shows more than 10% accuracy improvement over the baseline without memory management on the LongMemEval dataset.",
+    "abstract_src": "arxiv"
+  },
+  {
+    "title": "AgentPoison: Red-teaming LLM Agents via Poisoning Memory or Knowledge Bases",
+    "year": "2024",
+    "venue": "NeurIPS",
+    "doi": "",
+    "url": "http://papers.nips.cc/paper_files/paper/2024/hash/eb113910e9c3f6242541c1652e30dfd6-Abstract-Conference.html",
+    "dblp_key": "conf/nips/ChenXXSL24",
+    "pdf": "AgentPoison_Red_teaming_LLM_Agents_via_Poisoning_Memory_or_K.pdf",
+    "abstract": "LLM agents have demonstrated remarkable performance across various applications, primarily due to their advanced capabilities in reasoning, utilizing external knowledge and tools, calling APIs, and executing actions to interact with environments. Current agents typically utilize a memory module or a retrieval-augmented generation (RAG) mechanism, retrieving past knowledge and instances with similar embeddings from knowledge bases to inform task planning and execution. However, the reliance on unverified knowledge bases raises significant concerns about their safety and trustworthiness. To uncover such vulnerabilities, we propose a novel red teaming approach AgentPoison, the first backdoor attack targeting generic and RAG-based LLM agents by poisoning their long-term memory or RAG knowledge base. In particular, we form the trigger generation process as a constrained optimization to optimize backdoor triggers by mapping the triggered instances to a unique embedding space, so as to ensure that whenever a user instruction contains the optimized backdoor trigger, the malicious demonstrations are retrieved from the poisoned memory or knowledge base with high probability. In the meantime, benign instructions without the trigger will still maintain normal performance. Unlike conventional backdoor attacks, AgentPoison requires no additional model training or fine-tuning, and the optimized backdoor trigger exhibits superior transferability, in-context coherence, and stealthiness. Extensive experiments demonstrate AgentPoison's effectiveness in attacking three types of real-world LLM agents: RAG-based autonomous driving agent, knowledge-intensive QA agent, and healthcare EHRAgent. On each agent, AgentPoison achieves an average attack success rate higher than 80% with minimal impact on benign performance (less than 1%) with a poison rate less than 0.1%.",
+    "abstract_src": "arxiv"
+  },
+  {
+    "title": "\"My agent understands me better\": Integrating Dynamic Human-like Memory Recall and Consolidation in LLM-Based Agents",
+    "year": "2024",
+    "venue": "CHI Extended Abstracts",
+    "doi": "10.1145/3613905.3650839",
+    "url": "https://doi.org/10.1145/3613905.3650839",
+    "dblp_key": "conf/chi/HouTM24",
+    "pdf": null,
+    "abstract": "In this study, we propose a novel human-like memory architecture designed for enhancing the cognitive abilities of large language model based dialogue agents. Our proposed architecture enables agents to autonomously recall memories necessary for response generation, effectively addressing a limitation in the temporal cognition of LLMs. We adopt the human memory cue recall as a trigger for accurate and efficient memory recall. Moreover, we developed a mathematical model that dynamically quantifies memory consolidation, considering factors such as contextual relevance, elapsed time, and recall frequency. The agent stores memories retrieved from the user's interaction history in a database that encapsulates each memory's content and temporal context. Thus, this strategic storage allows agents to recall specific memories and understand their significance to the user in a temporal context, similar to how humans recognize and recall past experiences.",
+    "abstract_src": "arxiv"
+  },
+  {
+    "title": "Evaluating Very Long-Term Conversational Memory of LLM Agents",
+    "year": "2024",
+    "venue": "ACL",
+    "doi": "10.18653/V1/2024.ACL-LONG.747",
+    "url": "https://doi.org/10.18653/v1/2024.acl-long.747",
+    "dblp_key": "conf/acl/MaharanaLTBBF24",
+    "pdf": "Evaluating_Very_Long_Term_Conversational_Memory_of_LLM_Agent.pdf",
+    "abstract": "Existing works on long-term open-domain dialogues focus on evaluating model responses within contexts spanning no more than five chat sessions. Despite advancements in long-context large language models (LLMs) and retrieval augmented generation (RAG) techniques, their efficacy in very long-term dialogues remains unexplored. To address this research gap, we introduce a machine-human pipeline to generate high-quality, very long-term dialogues by leveraging LLM-based agent architectures and grounding their dialogues on personas and temporal event graphs. Moreover, we equip each agent with the capability of sharing and reacting to images. The generated conversations are verified and edited by human annotators for long-range consistency and grounding to the event graphs. Using this pipeline, we collect LoCoMo, a dataset of very long-term conversations, each encompassing 300 turns and 9K tokens on avg., over up to 35 sessions. Based on LoCoMo, we present a comprehensive evaluation benchmark to measure long-term memory in models, encompassing question answering, event summarization, and multi-modal dialogue generation tasks. Our experimental results indicate that LLMs exhibit challenges in understanding lengthy conversations and comprehending long-range temporal and causal dynamics within dialogues. Employing strategies like long-context LLMs or RAG can offer improvements but these models still substantially lag behind human performance.",
+    "abstract_src": "arxiv"
+  },
+  {
+    "title": "Open-Ended Instructable Embodied Agents with Memory-Augmented Large Language Models",
+    "year": "2023",
+    "venue": "EMNLP",
+    "doi": "10.18653/V1/2023.FINDINGS-EMNLP.226",
+    "url": "https://doi.org/10.18653/v1/2023.findings-emnlp.226",
+    "dblp_key": "conf/emnlp/SarchWTF23",
+    "pdf": "Open_Ended_Instructable_Embodied_Agents_with_Memory_Augmente.pdf",
+    "abstract": "Pre-trained and frozen large language models (LLMs) can effectively map simple scene rearrangement instructions to programs over a robot's visuomotor functions through appropriate few-shot example prompting. To parse open-domain natural language and adapt to a user's idiosyncratic procedures, not known during prompt engineering time, fixed prompts fall short. In this paper, we introduce HELPER, an embodied agent equipped with an external memory of language-program pairs that parses free-form human-robot dialogue into action programs through retrieval-augmented LLM prompting: relevant memories are retrieved based on the current dialogue, instruction, correction, or VLM description, and used as in-context prompt examples for LLM querying. The memory is expanded during deployment to include pairs of user's language and action plans, to assist future inferences and personalize them to the user's language and routines. HELPER sets a new state-of-the-art in the TEACh benchmark in both Execution from Dialog History (EDH) and Trajectory from Dialogue (TfD), with a 1.7x improvement over the previous state-of-the-art for TfD. Our models, code, and video results can be found in our project's website: https://helper-agent-llm.github.io.",
+    "abstract_src": "arxiv"
+  }
+]
