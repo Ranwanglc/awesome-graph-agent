@@ -11,6 +11,7 @@ A curated collection of papers, projects, and resources on **Graph × Agent/LLM*
 - [Graph + RAG](#graph--rag)
 - [Graph + LLM Hallucination & Reliability](#graph--llm-hallucination--reliability)
 - [Graph + LLM Fundamentals](#graph--llm-fundamentals)
+- [Curated Sub-collections](#curated-sub-collections)
 - [Contributing](#contributing)
 
 ---
@@ -117,6 +118,13 @@ A curated collection of papers, projects, and resources on **Graph × Agent/LLM*
 | # | Paper | Venue | Year | Keywords |
 |---|-------|-------|------|----------|
 | 42 | **LLMs as Zero-shot Graph Learners: Alignment of GNN Representations with LLM Token Embeddings** | NeurIPS 2024 | 2024 | Graph Learning, LLM |
+
+## Curated Sub-collections
+
+Focused, DBLP-sourced reading lists with abstracts and mirrored open-access PDFs:
+
+- [`agent-memory/`](agent-memory/) — LLM agent long/short-term memory (single-agent + tool memory).
+- [`shared-memory-files/`](shared-memory-files/) — **shared / collective memory and shared files / artifacts / workspaces across multiple LLM agents** (18 papers, 17/18 abstracts, 12 PDFs). Curated by Aris, 2026-06-26.
 
 ## Contributing
 
